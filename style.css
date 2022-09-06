@@ -164,7 +164,7 @@ input[type=number] {
 .head-second-image {
   position: absolute;
   mix-blend-mode: overlay;
-  top: 274px;
+  top: 190px;
   left: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
