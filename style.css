@@ -206,6 +206,8 @@ input[type=number] {
   transition: 0.5s all;
   cursor: pointer;
   z-index: 5;
+  width:154px;
+  height:44px;
 }
 .head-cta-button:hover {
   transform: scale(1.1) translate(-50%, -50%);
