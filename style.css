@@ -20,7 +20,7 @@ input[type=number] {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-size: cover;
   background-image: url(assets/backgrounds/mobile_360.png);
@@ -47,12 +47,6 @@ input[type=number] {
   }
 }
 
-.body {
-  overflow: hidden;
-  max-height: 100vh;
-  max-width: 100vw;
-}
-
 .baloon {
   position: absolute;
   top: 0;
@@ -63,35 +57,30 @@ input[type=number] {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding-top: 36px;
 }
 
-.logo {
-  mix-blend-mode: lighten;
-}
 @media screen and (min-width: 650px) {
   .logo {
-    width: 174px;
-    height: 48px;
+    width: 180px;
+    height: 100px;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .logo {
-    width: 174px;
-    height: 48px;
+    width: 180px;
+    height: 100px;
   }
 }
 @media screen and (min-width: 1920px) {
   .logo {
-    width: 144px;
-    height: 80px;
+    width: 250px;
+    height: 138px;
   }
 }
 @media screen and (min-width: 2000px) {
   .logo {
-    width: 203px;
-    height: 56px;
-    margin-top: 100px;
+    width: 400px;
+    height: 222px;
   }
 }
 
@@ -103,151 +92,145 @@ input[type=number] {
 .head-first-image {
   mix-blend-mode: lighten;
   position: absolute;
-  top: 26px;
-  left: -138px;
+  top: 180px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 @media screen and (min-width: 650px) {
   .head-first-image {
-    width: 700px;
+    top: 330px;
+    width: 650px;
     height: auto;
-    left: -280px;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .head-first-image {
     width: 918px;
     height: 642px;
-    left: -380px;
-    top: 16px;
+    top: 420px;
   }
 }
 @media screen and (min-width: 1920px) {
   .head-first-image {
     width: 1569px;
     height: 1076px;
-    left: -700px;
-    top: -40px;
+    top: 620px;
   }
 }
 @media screen and (min-width: 2000px) {
   .head-first-image {
     width: 2000px;
     height: auto;
-    left: -890px;
-    top: 20px;
+    top: 820px;
   }
 }
 .head-text-image {
   position: absolute;
-  top: 118px;
-  left: -119px;
+  top: 188px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 650px) {
   .head-text-image {
     width: 554px;
     height: 152px;
-    left: -203px;
-    top: 205px;
+    top: 340px;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .head-text-image {
     width: 580px;
     height: auto;
-    left: -200px;
-    top: 260px;
+    top: 420px;
   }
 }
 @media screen and (min-width: 1920px) {
   .head-text-image {
     width: 650px;
     height: 152px;
-    left: -245px;
-    top: 362px;
+    top: 562px;
   }
 }
 @media screen and (min-width: 2000px) {
   .head-text-image {
     width: 814px;
     height: auto;
-    left: -312px;
-    top: 540px;
-  }
-}
-.head-cta-button {
-  position: absolute;
-  top: 230px;
-  left: -35px;
-  transition: 0.5s all;
-  cursor: pointer;
-  z-index: 5;
-}
-.head-cta-button:hover {
-  transform: scale(1.1);
-}
-@media screen and (min-width: 650px) {
-  .head-cta-button {
-    top: 380px;
-    left: -5px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .head-cta-button {
-    top: 425px;
-    left: 0px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .head-cta-button {
-    top: 535px;
-    left: 0px;
-  }
-}
-@media screen and (min-width: 2000px) {
-  .head-cta-button {
-    top: 785px;
-    left: -40px;
-    width: 280px;
-    height: auto;
+    top: 750px;
   }
 }
 .head-second-image {
   position: absolute;
-  top: 132px;
   mix-blend-mode: overlay;
-  left: -97px;
+  top: 274px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 650px) {
   .head-second-image {
     width: 620px;
     height: auto;
-    left: -230px;
-    top: 250px;
+    top: 355px;
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .head-second-image {
     width: 600px;
     height: auto;
-    left: -242px;
-    top: 290px;
+    top: 430px;
   }
 }
 @media screen and (min-width: 1920px) {
   .head-second-image {
     width: 670px;
     height: auto;
-    left: -262px;
-    top: 395px;
+    top: 580px;
   }
 }
 @media screen and (min-width: 2000px) {
   .head-second-image {
     width: 814px;
     height: auto;
-    left: -330px;
-    top: 600px;
+    top: 760px;
+  }
+}
+.head-cta-button {
+  position: absolute;
+  top: 274px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s all;
+  cursor: pointer;
+  z-index: 5;
+}
+.head-cta-button:hover {
+  transform: scale(1.1) translate(-50%, -50%);
+  transform-origin: center;
+}
+@media screen and (min-width: 650px) {
+  .head-cta-button {
+    top: 465px;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .head-cta-button {
+    top: 540px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .head-cta-button {
+    top: 690px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .head-cta-button {
+    top: 920px;
+    width: 280px;
+    height: auto;
   }
 }
 
@@ -385,36 +368,40 @@ input[type=number] {
 
 .steps {
   display: flex;
-  justify-content: space-between;
-  margin-block: 36px;
+  justify-content: center;
+  margin-block: 24px;
   max-width: 380px;
   padding-inline: 15px;
   width: 100%;
-  margin-top: 280px;
+  margin-top: 275px;
+  gap: 8px;
 }
 @media screen and (min-width: 650px) {
   .steps {
     max-width: 480px;
-    margin-top: 400px;
+    margin-top: 430px;
+    gap: 60px;
+    margin-bottom: 40px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (orientation: landscape) {
   .steps {
     max-width: 650px;
-    margin-top: 462px;
-    margin-left: 38px;
+    margin-top: 500px;
+    gap: 60px;
   }
 }
 @media screen and (min-width: 1920px) {
   .steps {
     max-width: 1110px;
-    margin-top: 546px;
+    margin-top: 620px;
   }
 }
 @media screen and (min-width: 2000px) {
   .steps {
     max-width: 1110px;
-    margin-top: 766px;
+    margin-top: 800px;
+    gap: 85px;
   }
 }
 
@@ -426,8 +413,8 @@ input[type=number] {
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .step-1 {
-    width: 108px;
-    height: 55px;
+    width: 161px;
+    height: 72px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -451,8 +438,8 @@ input[type=number] {
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .step-2 {
-    width: 190px;
-    height: 55px;
+    width: 198px;
+    height: 72px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -477,7 +464,7 @@ input[type=number] {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .step-3 {
     width: 248px;
-    height: 65px;
+    height: 72px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -498,7 +485,7 @@ input[type=number] {
   justify-content: center;
   align-items: center;
   padding-inline: 28px;
-  flex-wrap: wrap;
+  gap: 32px;
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .payments {
@@ -507,33 +494,40 @@ input[type=number] {
     width: 100%;
   }
 }
-.payments > * {
-  margin-right: 24px;
-  margin-bottom: 14px;
-}
 @media screen and (min-width: 650px) {
-  .payments > * {
+  .payments {
     margin-right: 42px;
     margin-bottom: 14px;
   }
 }
-.payments > :nth-child(4) {
-  margin-right: 50px;
-}
-.payments > :nth-child(8) {
-  margin-right: 0;
-}
 
 @media screen and (min-width: 650px) {
   .payment-mobile {
-    display: none;
+    width: 115px;
+    height: 36px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .payment {
+    height: 28px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .payment {
+    height: 17px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .payment {
+    height: 20px;
   }
 }
 
 .payment-tablet {
   display: none;
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 1024px) {
   .payment-tablet {
     display: block;
     width: 200px;
@@ -542,7 +536,7 @@ input[type=number] {
 }
 
 footer {
-  padding-top: 18px;
+  padding-top: 24px;
   padding-inline: 28px;
   text-align: center;
   color: white;
@@ -660,6 +654,27 @@ footer {
   -webkit-animation: payment-animation 2s infinite;
           animation: payment-animation 2s infinite;
 }
+@media screen and (min-width: 650px) {
+  .special-payment {
+    height: 63px;
+    width: 204px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .special-payment {
+    height: 48px;
+    width: 161px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .special-payment {
+    height: 65px;
+    width: 215px;
+    margin-bottom: 0;
+  }
+}
 
 @-webkit-keyframes payment-animation {
   0% {
@@ -684,6 +699,12 @@ footer {
     transform: scale(1);
   }
 }
+@media screen and (min-width: 1024px) {
+  .payment-mobile {
+    display: none;
+  }
+}
+
 footer > p {
   font-family: "Montserrat";
   font-style: normal;
