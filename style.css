@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 *:focus {
   outline: none;
@@ -19,7 +19,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
@@ -220,6 +220,11 @@ input[type=number] {
   width: 154px;
   height: 44px;
 }
+
+.head-cta-button-img {
+  width: 154px;
+  height: 44px;
+}
 .head-cta-button:hover {
   transform: scale(1.1) translate(-50%, -50%);
   transform-origin: center;
@@ -242,6 +247,11 @@ input[type=number] {
 @media screen and (min-width: 2000px) {
   .head-cta-button {
     top: 920px;
+    width: 280px;
+    height: auto;
+  }
+
+  .head-cta-button-img {
     width: 280px;
     height: auto;
   }
@@ -327,7 +337,12 @@ input[type=number] {
   top: 20px;
   height: 32px;
   width: 50px;
-  background: linear-gradient(0deg, rgba(41, 39, 56, 0.16), rgba(41, 39, 56, 0.16)), #ffffff;
+  background: linear-gradient(
+      0deg,
+      rgba(41, 39, 56, 0.16),
+      rgba(41, 39, 56, 0.16)
+    ),
+    #ffffff;
   border-radius: 8px 0px 0px 8px;
   position: absolute;
   left: 0;
@@ -500,16 +515,18 @@ input[type=number] {
   padding-inline: 28px;
   gap: 32px;
 }
-@media screen and (min-width: 1024px) and (orientation: landscape) {
-  .payments {
-    justify-content: space-between;
-    max-width: 791px;
-    width: 100%;
-  }
-}
+
 @media screen and (min-width: 650px) {
   .payments {
     margin-bottom: 14px;
+    gap: 40px;
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .payments {
+    gap: 36px;
+    width: 100%;
+    margin-right: 36px;
   }
 }
 
@@ -533,6 +550,12 @@ input[type=number] {
 @media screen and (min-width: 1920px) {
   .payment {
     height: 20px;
+  }
+
+  .payments {
+    gap: 60px;
+    width: 100%;
+    margin-right: 56px;
   }
 }
 
@@ -588,6 +611,14 @@ footer {
   background: none;
   margin-top: 16px;
   margin-bottom: 32px;
+  width: 180px;
+  height: 36px;
+  cursor: pointer;
+  display: block;
+  margin-inline: auto;
+}
+
+.terms-button-img {
   width: 180px;
   height: 36px;
 }
@@ -666,7 +697,7 @@ footer {
 .special-payment {
   margin-bottom: 24px;
   -webkit-animation: payment-animation 2s infinite;
-          animation: payment-animation 2s infinite;
+  animation: payment-animation 2s infinite;
 }
 @media screen and (min-width: 650px) {
   .special-payment {
@@ -720,10 +751,10 @@ footer {
 }
 
 footer > p {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
   line-height: 16px;
   margin-bottom: 18px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
