@@ -225,10 +225,8 @@ input[type='number'] {
   width: 154px;
   height: 44px;
 }
-.head-cta-button:hover {
-  transform: scale(1.1) translate(-50%, -50%);
-  transform-origin: center;
-}
+
+
 @media screen and (min-width: 650px) {
   .head-cta-button {
     top: 465px;
